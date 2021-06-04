@@ -1,2 +1,2 @@
-# Star_Wars_Dashboard
+# Star Wars Dashboard
 Created with CodeSandbox
