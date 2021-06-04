@@ -37,7 +37,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25px 0;
+  margin: 20px 0;
+}
+
+.left-menu ul li img {
+  margin-bottom: 10px;
 }
 
 .settings {
@@ -56,5 +60,62 @@ ul {
 }
 
 .card {
-  background: #fff;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 16px;
+  margin: 0 20px;
+  height: 132px;
+}
+
+.card-small {
+  width: 240px;
+}
+
+.card-large {
+  width: 464px;
+}
+
+.card .card-content {
+  display: flex;
+}
+
+.card .card-container {
+  display: flex;
+}
+
+.cards-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card .card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card .card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-info p {
+  font-size: 16px;
+}
+
+.card-info h2 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffba33;
 }
