@@ -75,8 +75,8 @@ async function preencherDadosDoPersonagem() {
   cardPerson.forEach((people) => {
     $("#people").append(`<div class="card-content-people">
         <div class="card-people">
-        <div class="star-map"><img src="./assets/mapa_estrelar.jpg"></div>
           <div class="card-info">
+          <div class="star-map"><img src="./assets/mapa_estrelar.jpg"></div>
             <h4> ${people.name}</h4>
             <p class="subtitle-people">Gênero: ${people.gender}</p>
             <p class="subtitle-people">Ano de Nascimento: ${people.birth_year}</p>

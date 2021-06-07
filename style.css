@@ -193,6 +193,7 @@ td {
   font-weight: bold;
   color: #ffba33;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .card-container-people {
@@ -211,22 +212,21 @@ td {
   width: 280px;
   height: 300px;
 
-  /* padding: 30px;
-  margin: 40px; */
+  margin: 20px 0;
 }
 
 .card-people {
-  width: 268px;
-  height: 280px;
+  width: 80%;
+  height: 250px;
 
   border: 1px solid #ffba33;
   box-sizing: border-box;
   border-radius: 16px;
 
   display: flex;
+  justify-content: center;
 
-  margin: 0 20px;
-  padding: 30px;
+  margin: 23px 28px;
 }
 
 .card-info .subtitle-people {
@@ -236,6 +236,8 @@ td {
   line-height: 15px;
 
   color: #e5e5e5;
+
+  padding: 5px;
 }
 
 .star-map {
