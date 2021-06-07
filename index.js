@@ -5,6 +5,7 @@ const navesCont = document.getElementById("naves");
 
 preencheContador();
 preencherTabela();
+preencherDadosDoPersonagem();
 
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
@@ -64,4 +65,23 @@ async function preencherTabela() {
 
 function swapGet(param) {
   return axios.get(`https://swapi.dev/api/${param}`);
+}
+
+async function preencherDadosDoPersonagem() {
+  const response = await swapGet("people/");
+  const cardPerson = response.data.results;
+  console.log("AQUI" + cardPerson);
+
+  cardPerson.forEach((people) => {
+    $("#people").append(`<div class="card-content-people">
+        <div class="card-people">
+        <div class="star-map"><img src="./assets/mapa_estrelar.jpg"></div>
+          <div class="card-info">
+            <h4> ${people.name}</h4>
+            <p class="subtitle-people">Gênero: ${people.gender}</p>
+            <p class="subtitle-people">Ano de Nascimento: ${people.birth_year}</p>
+          </div>
+        </div>
+      </div>`);
+  });
 }

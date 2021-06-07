@@ -11,6 +11,13 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .container {
   display: flex;
 }
@@ -33,14 +40,14 @@ ul {
   padding: 20px 0;
 }
 
-.left-menu ul li {
+.left-menu ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
 }
 
-.left-menu ul li img {
+.left-menu ul li a img {
   margin-bottom: 10px;
 }
 
@@ -179,4 +186,69 @@ td {
 
   display: flex;
   align-items: center;
+}
+
+.card-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffba33;
+  text-align: center;
+}
+
+.card-container-people {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  margin: 40px;
+}
+
+.card-content-people {
+  background: url("./assets/fundo.png");
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  width: 280px;
+  height: 300px;
+
+  /* padding: 30px;
+  margin: 40px; */
+}
+
+.card-people {
+  width: 268px;
+  height: 280px;
+
+  border: 1px solid #ffba33;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  display: flex;
+
+  margin: 0 20px;
+  padding: 30px;
+}
+
+.card-info .subtitle-people {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #e5e5e5;
+}
+
+.star-map {
+  display: flex;
+  justify-content: center;
+}
+
+.star-map img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+
+  width: 109px;
+  height: 109px;
+
+  margin-bottom: 25px;
 }

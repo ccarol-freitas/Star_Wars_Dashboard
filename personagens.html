@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Personagens Star Wars</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-menu">
+        <img src="assets/logo.png" alt="logo" />
+
+        <div class="itens-menu">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="assets/dashboard.svg" />
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a href="personagens.html">
+                <img src="assets/personagens.svg" />
+                <p>Personagens</p>
+              </a>
+            </li>
+            <li>
+              <a href="planetas.html">
+                <img src="assets/planetas.svg" />
+                <p>Planetas</p>
+              </a>
+            </li>
+            <li>
+              <a href="nave.html">
+                <img src="assets/nave.svg" />
+                <p>Naves espaciais</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="settings">
+            <i data-feather="settings"></i>
+            <p>Configurações</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="card-container-people" id="people"></div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
