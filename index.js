@@ -6,6 +6,33 @@ const navesCont = document.getElementById("naves");
 preencheContador();
 preencherTabela();
 
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
+
+async function drawChart() {
+  const response = await swapGet("vehicles/");
+  const vehiclesArray = response.data.results;
+
+  const dataArray = [];
+  dataArray.push(["Veículos", "Passageiros"]);
+  vehiclesArray.forEach((vehicle) => {
+    dataArray.push([vehicle.name, Number(vehicle.passengers)]);
+  });
+
+  var data = google.visualization.arrayToDataTable(dataArray);
+
+  var options = {
+    title: "Veículos de Star Wars",
+    // legend: "none",
+    is3D: true
+  };
+
+  var chart = new google.visualization.PieChart(
+    document.getElementById("piechart_3d")
+  );
+  chart.draw(data, options);
+}
+
 function preencheContador() {
   Promise.all([
     swapGet("people/"),
@@ -28,7 +55,7 @@ async function preencherTabela() {
   table.forEach((film) => {
     $("#movies").append(`<tr>
     <td>${film.title}</td>
-    <td>${film.release_date}</td>
+    <td>${moment(film.release_date).format("DD/MM/YYYY")}</td>
     <td>${film.director}</td>
     <td>${film.episode_id}</td>
     </tr>`);

@@ -85,18 +85,26 @@
           </div>
         </div>
 
-        <div class="table" id="movies">
-          <table>
-            <thead>
-              <tr>
-                <th>Título</th>
-                <th>Estréia</th>
-                <th>Diretor</th>
-                <th>Epsódio</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+        <div class="content-info">
+          <div class="table" id="movies">
+            <h5>Filmes Rescentes</h5>
+            <p>Veja os últimos filmes da franquia</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Estréia</th>
+                  <th>Diretor</th>
+                  <th>Epsódio</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div class="chart">
+            <div id="piechart_3d" style="width: 400px; height: 400px;"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +117,17 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
