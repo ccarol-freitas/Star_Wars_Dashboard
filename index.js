@@ -107,11 +107,13 @@ async function preencherDadosDaNave() {
   const response = await swapGet("starships/");
   const cardStarship = response.data.results;
 
+  console.log(cardStarship);
+
   cardStarship.forEach((starship) => {
-    $("#starship").append(`<div class="card-content-starship">
+    $("#starship")
+      .append(`<div class="card-content-starship" style="background: #fff">
         <div class="card-starship">
-          <div class="card-info">
-          <div class="star-map"><img src="./assets/mapa_estrelar.jpg"></div>
+          <div class="card-info" style="padding: 20px">
             <h4> ${starship.name}</h4>
             <p class="subtitle-starship"><b>Classe:</b> ${starship.starship_class}</p>
             <p class="subtitle-starship"><b>Modelo:</b> ${starship.model}</p>
@@ -120,79 +122,3 @@ async function preencherDadosDaNave() {
       </div>`);
   });
 }
-document.addEventListener("DOMContentLoaded", function (event) {
-  let nave = document.querySelectorAll(".corcinza strong");
-
-  let nave1 = document.createElement("img");
-  nave1.src = "";
-
-  let nave2 = document.createElement("img");
-  nav2.src = "";
-
-  let nave3 = document.createElement("img");
-  nave3.src = "";
-
-  let nave4 = document.createElement("img");
-  nave4.src =
-    "http://colombo--tst.custhelp.com/euf/assets/images/icon_colombo/servicos.png";
-
-  let nave5 = document.createElement("img");
-  nave5.src = "";
-
-  let nave6 = document.createElement("img");
-  nave6.src = "";
-
-  let nave7 = document.createElement("img");
-  nave7.src = "";
-
-  let nave8 = document.createElement("img");
-  nave8.src = "";
-
-  let nave9 = document.createElement("img");
-  nave9.src = "";
-
-  let nave10 = document.createElement("img");
-  nave10.src = "";
-
-  for (let i = 0; i < cat.length; i++) {
-    if (cat[i].innerText == "Entregas") {
-      cat[i].appendChild(nave1);
-    }
-
-    if (cat[i].innerText == "Loja Física") {
-      cat[i].appendChild(nave2);
-    }
-
-    if (cat[i].innerText == "Informações Gerais") {
-      cat[i].appendChild(nave3);
-    }
-
-    if (cat[i].innerText == "Serviços Financeiros") {
-      cat[i].appendChild(nave4);
-    }
-
-    if (cat[i].innerText == "Garantia") {
-      cat[i].appendChild(nave5);
-    }
-
-    if (cat[i].innerText == "Trocas e Cancelamentos") {
-      cat[i].appendChild(nave6);
-    }
-
-    if (cat[i].innerText == "Trocas e Cancelamentos") {
-      cat[i].appendChild(nave7);
-    }
-
-    if (cat[i].innerText == "Trocas e Cancelamentos") {
-      cat[i].appendChild(nave8);
-    }
-
-    if (cat[i].innerText == "Trocas e Cancelamentos") {
-      cat[i].appendChild(nave9);
-    }
-
-    if (cat[i].innerText == "Trocas e Cancelamentos") {
-      cat[i].appendChild(nave10);
-    }
-  }
-});

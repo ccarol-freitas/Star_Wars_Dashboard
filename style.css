@@ -322,3 +322,8 @@ th {
 
   margin: 10px;
 }
+
+.card-info img {
+  width: 109px;
+  height: 109px;
+}
