@@ -23,13 +23,13 @@
                 <p>Dashboard</p>
               </a>
             </li>
-            <li class="active">
+            <li>
               <a href="personagens.html">
                 <img src="assets/personagens.svg" />
                 <p>Personagens</p>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="planetas.html">
                 <img src="assets/planetas.svg" />
                 <p>Planetas</p>
@@ -50,8 +50,25 @@
         </div>
       </div>
 
-      <div class="content" style="background: #f5f6fa;">
-        <div class="card-container-people" id="people"></div>
+      <div class="content">
+        <div class="content-info">
+          <div class="table-planets" id="planets">
+            <h5>Informações dos planetas</h5>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Clima</th>
+                  <th>Terrano</th>
+                  <th>Terrano</th>
+                  <th>Gravidade</th>
+                  <th>População</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -62,10 +79,6 @@
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>

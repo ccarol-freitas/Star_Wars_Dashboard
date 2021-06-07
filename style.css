@@ -17,7 +17,16 @@ a {
   font-size: 16px;
   font-weight: bold;
 }
-
+#inicio {
+  background: black;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 .container {
   display: flex;
 }
@@ -62,7 +71,8 @@ a {
 }
 
 .content {
-  background: #f5f6fa;
+  /* background: #f5f6fa; */
+  background: url("./assets/fundo.png");
   width: 100%;
 }
 
@@ -134,6 +144,19 @@ a {
   border-right: 1px solid #111111;
 }
 
+.table-planets {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  width: 642px;
+  height: 100%;
+
+  padding: 30px;
+
+  text-align: inherit;
+}
+
 .table {
   background: #fff;
   border-radius: 16px;
@@ -143,9 +166,9 @@ a {
   height: 450px;
 
   padding: 30px;
-  margin: 40px;
+  margin: 0 40px 0 0;
 
-  text-align: left;
+  text-align: inherit;
 }
 
 .table h5 {
@@ -159,19 +182,23 @@ a {
   width: 100%;
 }
 
-.table table th {
-  border-bottom: 1px solid #565656;
-  padding: 10px 0;
-}
-
 td {
   border-bottom: 1px solid #e9e9e9;
   padding: 10px 0;
+  text-align: left;
+}
+
+th {
+  border-bottom: 1px solid #565656;
+  padding: 10px 10px;
+  text-align: left;
+  width: 500px;
 }
 
 .content-info {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .chart {
@@ -216,8 +243,8 @@ td {
 }
 
 .card-people {
-  width: 80%;
-  height: 250px;
+  width: 93%;
+  height: 93%;
 
   border: 1px solid #ffba33;
   box-sizing: border-box;
@@ -226,13 +253,12 @@ td {
   display: flex;
   justify-content: center;
 
-  margin: 23px 28px;
+  margin: 10px;
 }
 
 .card-info .subtitle-people {
   font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 15px;
 
   color: #e5e5e5;
@@ -253,4 +279,46 @@ td {
   height: 109px;
 
   margin-bottom: 25px;
+}
+
+.active a {
+  color: #ffba33;
+}
+
+.table-planets h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-container-starship {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  margin: 40px;
+}
+
+.card-content-starship {
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  width: 280px;
+  height: 300px;
+
+  margin: 20px 0;
+}
+
+.card-starship {
+  width: 93%;
+  height: 93%;
+
+  border: 1px solid #ffba33;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 10px;
 }
