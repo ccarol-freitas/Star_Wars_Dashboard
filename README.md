@@ -1,3 +1,5 @@
 # Star Wars Dashboard
-Created with CodeSandbox
-See in https://qw6nk.csb.app/
+<ul>
+  <li>Created with CodeSandbox</li>
+  <li>See in https://qw6nk.csb.app/</li>
+</ul>
