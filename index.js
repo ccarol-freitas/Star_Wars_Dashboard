@@ -75,14 +75,19 @@ async function preencherDadosDoPersonagem() {
   const cardPerson = response.data.results;
 
   cardPerson.forEach((people) => {
-    $("#people").append(`<div class="card-content-people">
-        <div class="card-people">
-          <div class="card-info">
-          <div class="star-map"><img src="./assets/mapa_estrelar.jpg"></div>
+    $("#people").append(`
+    <div class="cartao">
+        <div class="cartao-container">    
+
+          <div class="cartao-front">
             <h4> ${people.name}</h4>
+          </div>
+
+          <div class="cartao-back">
             <p class="subtitle-people"><b>Gênero:</b> ${people.gender}</p>
             <p class="subtitle-people"><b>Ano de Nascimento:</b> ${people.birth_year}</p>
           </div>
+          
         </div>
       </div>`);
   });
@@ -110,14 +115,19 @@ async function preencherDadosDaNave() {
   console.log(cardStarship);
 
   cardStarship.forEach((starship) => {
-    $("#starship")
-      .append(`<div class="card-content-starship" style="background: #fff">
-        <div class="card-starship">
-          <div class="card-info" style="padding: 20px">
+    $("#starship").append(`
+      <div class="cartao">
+        <div class="cartao-container">    
+
+          <div class="cartao-front">
             <h4> ${starship.name}</h4>
+          </div>
+
+          <div class="cartao-back">
             <p class="subtitle-starship"><b>Classe:</b> ${starship.starship_class}</p>
             <p class="subtitle-starship"><b>Modelo:</b> ${starship.model}</p>
           </div>
+          
         </div>
       </div>`);
   });
